@@ -54,10 +54,12 @@ span{
 }
 
 .indexTitle {
+    position:relative;
     background-color: rgba(254, 249, 158, 0.499);
     z-index: 3;
     font-size: 1.5rem;
     max-height: 50vh;
+    width: 100%;
     padding: 1vh;
 }
 
