@@ -1,0 +1,318 @@
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    /* overflow: hidden; */
+}
+
+.backBtn{ /*back button to index.html*/
+    height:5vh;
+    width: 5vw;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 100;
+}
+
+/*index.html*/
+.pageCont{ /*title layout container*/
+    display:grid;
+    max-width: 40vw;
+    margin: auto; /*center in page*/
+    grid-template-rows: repeat(2,1fr);
+    padding: 1%;
+    box-sizing: border-box;/*padding included in 100vh*/
+    gap: 1%;/*gutter*/
+    height: 100vh;
+    place-items: center;
+    text-align: center;
+}
+
+.indexTitle{ /*landing page title*/
+    background-color: rgb(74, 95, 130);
+    font-size: 1.5rem;
+    min-height: 50vh;
+    padding: 1vh;
+}
+
+#materialBox > div {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.borderRad{
+    border-radius: 10px;
+}
+
+#raw{
+    background-color: aliceblue; /*background image here*/
+    grid-area:1/1/3/2;
+}
+
+#recycle{
+    background-color: rgb(185, 209, 231); /*background image here*/
+    grid-area:1/2/2/4;
+}
+
+#concrete{
+    background-color: rgb(139, 173, 204); /*background image here*/
+    grid-area:2/2/3/3;
+}
+
+#natural{
+    background-color: rgb(122, 163, 201); /*background image here*/
+    grid-area:2/3/4/4;
+
+}
+
+#system{
+    background-color: rgb(102, 139, 174); /*background image here*/
+    grid-area:3/1/4/3;
+
+}
+
+#materialBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2%;
+    height: 100%;
+    width: 100%;
+}
+
+/* turn into button */ 
+#materialBox > div a,
+.backBtn a{
+    display: grid;
+    place-items: center; /* Centers the text both horizontally and vertically */
+    text-decoration: none; /* Remove underline from the text */
+    color: black; /* Set the text color */
+    height: inherit;
+    width: inherit;
+}
+
+
+/*page 2*/
+.container{ /*content page background container settings*/
+    background-color: antiquewhite;
+    display: grid;
+    height: 100vh;
+    gap: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+#threeBythree{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+#fourByfour{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+#fiveByFive{
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.title{ /*universal title styling*/
+   max-width:100%;
+    font-size: 1.5rem;
+}
+
+#page1Title{/*title box page1*/ 
+    grid-area: 1/1/2/3;
+    background-color: rgb(74, 63, 51);
+
+}
+
+/*raw materials bento box*/
+#bamboo{
+    grid-area: 1/3/3/4;
+    background-color: rgb(162, 139, 114);
+
+}
+
+#stone{
+    grid-area: 2/1/3/2;
+    background-color: rgb(162, 144, 124);
+    
+}
+
+#cork{
+    grid-area: 2/2/4/3;
+    background-color: rgb(186, 160, 133);
+    
+}
+
+#wool{
+    grid-area: 3/3/4/4;
+    background-color: rgb(105, 81, 56);
+    
+}
+
+#terracotta{
+    grid-area: 3/1/4/2;
+    background-color: rgb(197, 168, 137);
+    
+}
+
+#page2Title{/*title box page2*/ 
+    grid-area: 2/2/4/4;
+    background-color: rgb(74, 63, 51);
+}
+
+/*recycled materials bento box*/
+#plastic{
+    grid-area: 1/1/4/2;
+    background-color: rgb(74, 63, 51);
+}
+
+#tires{
+    grid-area: 1/2/2/4;
+    background-color: rgb(74, 63, 51);
+}
+
+#bioBlock{
+    grid-area: 1/4/3/5;
+    background-color: rgb(74, 63, 51);
+
+}
+
+#reclaimedWood{
+    grid-area: 3/4/5/5;
+    background-color: rgb(74, 63, 51);
+
+}
+
+#steel{
+    grid-area: 4/1/5/3;
+    background-color: rgb(74, 63, 51);
+
+}
+
+#rubber{
+    grid-area: 4/3/5/4;
+    background-color: rgb(105, 86, 66);
+
+}
+
+#page3Title{/*title box page3*/ 
+    grid-area: 2/1/3/2;
+    background-color: rgb(135, 106, 76);
+}
+
+/*concrete materials bento box*/
+#timbercrete{
+    grid-area: 1/1/2/3;
+    background-color: rgb(74, 63, 51);
+}
+
+#hempcrete{
+    grid-area: 1/3/2/4;
+    background-color: rgb(74, 63, 51);
+}
+
+#ashcrete{
+    grid-area: 2/2/3/4;
+    background-color: rgb(74, 63, 51);
+
+}
+
+#precast{
+    grid-area: 3/1/4/3;
+    background-color: rgb(74, 63, 51);
+
+}
+
+#bend{
+    grid-area: 3/3/4/4;
+    background-color: rgb(74, 63, 51);
+
+}
+
+#page4Title{/*title box page4*/ 
+    grid-area: 2/2/3/3;
+    background-color: rgb(135, 106, 76);
+}
+
+/*system materials bento box*/
+#solar{
+    grid-area: 1/1/2/3;
+    background-color: rgb(74, 63, 51);
+}
+
+#alumFoam{
+    grid-area: 1/3/3/4;
+    background-color: rgb(89, 70, 50);
+}
+
+#window{
+    grid-area: 3/2/4/4;
+    background-color: rgb(74, 63, 51);
+
+}
+
+#panel{
+    grid-area: 2/1/4/2;
+    background-color: rgb(74, 63, 51);
+
+}
+
+#page5Title{/*title box page5*/ 
+    grid-area: 2/4/3/6;
+    background-color: rgb(135, 106, 76);
+}
+
+/*natural materials bento box*/
+#clay{
+    grid-area: 1/1/3/3;
+    background-color: rgb(74, 63, 51);
+}
+
+#teraz{
+    grid-area: 1/3/2/4;
+    background-color: rgb(89, 70, 50);
+}
+
+#hydro{
+    grid-area: 2/3/3/4;
+    background-color: rgb(74, 63, 51);
+
+}
+
+#mycellium{
+    grid-area: 3/1/4/3;
+    background-color: rgb(74, 63, 51);
+
+}
+
+#earth{
+    grid-area: 1/4/2/6;
+    background-color: rgb(74, 63, 51);
+
+}
+
+#mdf{
+    grid-area: 3/3/4/6;
+    background-color: rgb(74, 63, 51);
+}
+
+/*hover behaviour*/
+#materialBox > div:hover,
+#threeBythree > div:hover,
+#fourByfour > div:hover,
+#fiveByFive > div:hover,
+.backBtn:hover{
+    background-color:  rgba(254, 127, 0, 0.5);
+    transform: scale(1.02);
+    transition: transform 0.5s ease-in-out;
+}
+
