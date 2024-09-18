@@ -6,6 +6,10 @@ body{
     /* overflow: hidden; */
 }
 
+p{
+    position: absolute;
+    z-index: 3;
+}
 .backBtn{ /*back button to index.html*/
     height:5vh;
     width: 5vw;
@@ -35,45 +39,46 @@ body{
     padding: 1vh;
 }
 
-#materialBox > div {
-    display: grid;
-    place-items: center;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-}
-
 .borderRad{
     border-radius: 10px;
 }
 
 #raw{
-    background-color: aliceblue; /*background image here*/
     grid-area:1/1/3/2;
+    background-image: url('https://as1.ftcdn.net/v2/jpg/00/56/88/18/1000_F_56881864_PqXXNa9qy6KOWK8l2GkmSL5geBhxxgED.jpg');
 }
 
 #recycle{
-    background-color: rgb(185, 209, 231); /*background image here*/
     grid-area:1/2/2/4;
+    background-image: url('https://polygood.com/wp-content/uploads/2024/02/home-hero-scaled.jpg');
+    background-size: 80%;
 }
 
 #concrete{
-    background-color: rgb(139, 173, 204); /*background image here*/
     grid-area:2/2/3/3;
-}
-
-#natural{
-    background-color: rgb(122, 163, 201); /*background image here*/
-    grid-area:2/3/4/4;
-
+    background-image: url('https://www.panjetanibuildwell.com/blog/wp-content/uploads/2024/02/Precast-Concrete.jpeg');
+    background-size: 100%;
 }
 
 #system{
-    background-color: rgb(102, 139, 174); /*background image here*/
-    grid-area:3/1/4/3;
+    grid-area:2/3/4/4;
+    background-image: url('https://www.lorentz.de/wp-content/uploads/2016/05/lorentz-pv-modules-lc300-p72-600x600.jpg');
+    background-size: 250%;
 
 }
 
+#natural{
+    grid-area:3/1/4/3;
+    background-image: url('https://d7fcfvvxwoz9e.cloudfront.net/dom43635/wp-content/uploads/2022/05/Terrazzo-Countertops.jpg');
+}
+
+#materialBox > div {/*make button range*/
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    background-position: center; 
+}
 #materialBox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -89,10 +94,10 @@ body{
     display: grid;
     place-items: center; /* Centers the text both horizontally and vertically */
     text-decoration: none; /* Remove underline from the text */
-    color: black; /* Set the text color */
     height: inherit;
     width: inherit;
 }
+
 
 
 /*page 2*/
@@ -105,6 +110,16 @@ body{
     box-sizing: border-box;
     text-align: center;
 }
+
+
+
+.container > div { /*center the texts*/
+    place-items: center;
+    text-align: center;
+    display: grid;
+
+}
+
 
 
 #threeBythree{
@@ -311,8 +326,9 @@ body{
 #fourByfour > div:hover,
 #fiveByFive > div:hover,
 .backBtn:hover{
-    background-color:  rgba(254, 127, 0, 0.5);
+    background-color:  rgba(186, 71, 18, 0.839);
     transform: scale(1.02);
     transition: transform 0.5s ease-in-out;
+    z-index: 3;
 }
 
