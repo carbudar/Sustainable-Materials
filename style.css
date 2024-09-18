@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(41, 41, 48);
+    background-color: rgb(235, 228, 214);
     margin: 0;
     height: 100vh;
     width: 100vw;
@@ -8,21 +8,25 @@ body {
 .backBtn {
     height: 5vh;
     width: 5vw;
-    background-color: rgb(11, 168, 14);
+    background-color: rgb(34, 39, 92);;
     position: absolute;
     z-index: 100;
-    outline: 3px solid rgb(198, 198, 204);
+    outline: 3px solid rgb(248, 255, 157);
 }
 
 h1{
-    color: rgb(18, 18, 79);
+    color: rgb(236, 89, 66);
+    font-size: 3em;
+    line-height: 8vh;
 }
 
 h2{
-  
     font-size: 13rem;
-    color: rgba(59, 227, 3, 0.318);
-  
+    color: rgba(34, 39, 92, 0.661);
+}
+
+span{
+    font-size: 0.5em;
 }
 
 #blur{
@@ -34,8 +38,8 @@ h2{
     max-width: 100vw;
     max-height: 100vh;
     filter: blur(10px);
-
 }
+
 .pageCont {
     display: grid;
     max-width: 40vw;
@@ -50,10 +54,10 @@ h2{
 }
 
 .indexTitle {
-    background-color: rgba(65, 65, 71, 0.479);
+    background-color: rgba(254, 249, 158, 0.499);
     z-index: 3;
     font-size: 1.5rem;
-    min-height: 50vh;
+    max-height: 50vh;
     padding: 1vh;
 }
 
@@ -78,13 +82,9 @@ h2{
 }
 
 
-span{
-    color: rgb(56, 177, 8);
-}
-
 #materialBox > div p,
 .container > div p{ /*text over all colors for readibility*/
-    color: rgb(73, 234, 10);
+    color: rgba(254, 249, 158);
     z-index: 4;
     transition: opacity 0.5s ease;
 }
@@ -107,7 +107,7 @@ span{
     content: '';
     position: absolute;
     inset: 0;
-    background-color: rgba(25, 25, 39, 0.574);
+    background-color: rgba(23, 28, 42, 0.435);
     z-index: 1;
     border-radius: inherit;
 }
@@ -140,7 +140,6 @@ span{
     grid-area:2/3/4/4;
     background-image: url('https://www.lorentz.de/wp-content/uploads/2016/05/lorentz-pv-modules-lc300-p72-600x600.jpg');
     background-size: 250%;
-
 }
 
 #natural{
@@ -164,7 +163,6 @@ span{
     text-align: center;
 }
 
-
 /*grid layout template*/
 #threeBythree{
     grid-template-columns: repeat(3,1fr);
@@ -183,21 +181,20 @@ span{
 
 .title{ /*universal title styling*/
     max-width:100%;
-     font-size: 1.5rem;
+     color: rgba(254, 249, 158);;
+     background-color: rgb(34, 39, 92);
+     line-height: 2vh;
  }
 
 /*page1*/
 #page1Title{ 
     grid-area: 1/1/2/3;
-    background-color: rgb(34, 39, 92);
-
 }
 
 /*raw materials bento box*/
 #bamboo{
     grid-area: 1/3/3/4;
     background-image: url('https://t3.ftcdn.net/jpg/00/56/88/18/360_F_56881864_PqXXNa9qy6KOWK8l2GkmSL5geBhxxgED.jpg');
-
 }
 
 #stone{
@@ -219,12 +216,10 @@ span{
 #terracotta{
     grid-area: 3/1/4/2;
     background-image: url('https://cdn.britannica.com/00/136500-050-4C011D84/Terra-cotta-pots.jpg');
-    
 }
 
 #page2Title{/*title box page2*/ 
     grid-area: 2/2/4/4;
-    background-color: rgb(34, 39, 92);
 }
 
 /*recycled materials bento box*/
@@ -241,30 +236,25 @@ span{
 #bioBlock{
     grid-area: 1/4/3/5;
     background-image: url('https://resource-recycling.com/plastics/wp-content/uploads/sites/4/2021/12/ByBlock-Copy-of-IMG_1407-web-1024x683.jpg')
-
 }
 
 #reclaimedWood{
     grid-area: 3/4/5/5;
     background-image: url('https://i0.wp.com/www.albanywoodworks.com/wp-content/uploads/2016/06/home-build-sustainable-6.jpg?fit=1920%2C1500&ssl=1');
-
 }
 
 #steel{
     grid-area: 4/1/5/3;
     background-image: url('https://mdbarnmaster.com/wp-content/uploads/2022/02/Cold-Formed-Steel-Buildings-Universal-Structures.jpg');
-
 }
 
 #rubber{
     grid-area: 4/3/5/4;
     background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS05A2g89cu96B-F6OQ49QA8TNuYgtCZCrHPg&s')
-
 }
 
 #page3Title{/*title box page3*/ 
     grid-area: 2/1/3/2;
-    background-color: rgb(34, 39, 92);
 }
 
 /*concrete materials bento box*/
@@ -287,7 +277,6 @@ span{
 #precast{
     grid-area: 3/1/4/3;
     background-image: url('https://www.countymaterials.com/media/zoo/images/precast_structure_3_76dea4e4fd430171894633b0af1001c1.jpeg');
-
 }
 
 #bend{
@@ -297,7 +286,6 @@ span{
 
 #page4Title{/*title box page4*/ 
     grid-area: 2/2/3/3;
-    background-color: rgb(34, 39, 92);
 }
 
 /*system materials bento box*/
@@ -315,19 +303,16 @@ span{
 #window{
     grid-area: 3/2/4/4;
     background-image:url('https://knowablemagazine.org/docserver/fulltext/10.1146/knowable-060822-3/smart-windows-1600x600.jpg');
-
 }
 
 #panel{
     grid-area: 2/1/4/2;
     background-image:url('https://www.harborfreight.com/media/catalog/product/cache/9fc4a8332f9638515cd199dd0f9238da/5/7/57325_W3.jpg');
     background-size: 160%;
-
 }
 
 #page5Title{/*title box page5*/ 
     grid-area: 2/4/3/6;
-    background-color: rgb(34, 39, 92);
 }
 
 /*natural materials bento box*/
@@ -344,7 +329,6 @@ span{
 #hydro{
     grid-area: 2/3/3/4;
     background-image:url('https://bimsmithstorage.blob.core.windows.net/news-content/20231114_hydrogels.png')
-
 }
 
 #mycellium{
@@ -355,7 +339,6 @@ span{
 #earth{
     grid-area: 1/4/2/6;
     background-image:url('https://cms.lowimpact.org/wp-content/uploads/2013/01/earth_bag.jpg')
-
 }
 
 #mdf{
@@ -367,8 +350,8 @@ span{
     content: attr(data-content); 
     position: absolute;
     place-self: center;
-    color:rgb(135, 221, 101);
-    background-color: rgba(31, 22, 153, 0.8);
+    color:rgb(34, 39, 92);
+    background-color: rgba(239, 89, 66, 0.8);
     font-size: 0.8rem;
     text-align: center;
     z-index: 10;
@@ -389,6 +372,6 @@ span{
     border-radius: 10px;
     transform: scale(1.01);
     transition: transform 0.9s ease-in-out;
-    background-color: rgba(20, 7, 194, 0.8);
+    background-color: rgba(239, 89, 66, 0.8);
     z-index: 3;
 }
